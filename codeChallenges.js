@@ -16,3 +16,17 @@ let string  = ['kelly', 'Coles']
 let newstr = string.reverse();
 console.log("The reversed string method string is:");
 console.log(newstr);
+
+//palindrome problem
+//=====================================================
+const palindrome = str => {
+    // turn the string to lowercase
+    str = str.toLowerCase()
+    // reverse input string and return the result of the
+    // comparison
+
+     return str === str.split('').reverse().join('')
+    
+  }
+ let result = palindrome ('table');
+ console.log(result);
