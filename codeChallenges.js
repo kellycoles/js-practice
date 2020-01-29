@@ -30,3 +30,17 @@ const palindrome = str => {
   }
  let result = palindrome ('table');
  console.log(result);
+
+ //count the vowelsin a string
+ //======================================================
+ const findVowels = str => {
+    let count = 0
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    for(let char of str.toLowerCase()) {
+      if(vowels.includes(char)) {
+        count++
+      }
+    }
+    console.log(count);
+  }
+  findVowels("kelly")
