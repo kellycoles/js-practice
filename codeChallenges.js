@@ -146,3 +146,7 @@ for (let y = 0; y < size; y++) {
 }
 
 console.log(board);
+//===================================================================
+//looping a triangle
+for (let line = "#"; line.length < 8; line += "#")
+  console.log(line);
