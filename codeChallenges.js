@@ -150,3 +150,13 @@ console.log(board);
 //looping a triangle
 for (let line = "#"; line.length < 8; line += "#")
   console.log(line);
+//=========================================================
+// min value in an array using rest parameter
+//Rest parameters are essentially a convenient shorthand for Function.prototype.apply
+const arr = [14, 58, 20, 77, 66, 82, 42, 67, 42, 4]
+const min = Math.min(...arr)
+console.log(min)
+// same as:
+var arr = [14, 58, 20, 77, 66, 82, 42, 67, 42, 4]
+var min = Math.min.apply(Math, arr)
+console.log(min)
